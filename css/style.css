@@ -17,6 +17,7 @@
 *{
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
 }
 
@@ -80,6 +81,7 @@ main{
     font-size: 0.67rem;
     letter-spacing: 5px;
     color: var(--cor4);
+
     margin-bottom: 10px;
 
     display: inline-block;
@@ -140,8 +142,10 @@ main{
     cursor: pointer;
     
     background-color: var(--cor1);
+
     color: var(--cor5);
     font-weight: 700;
+    
     padding: 10px 0;
     
     width: 100%;
