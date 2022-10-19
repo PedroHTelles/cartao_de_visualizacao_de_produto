@@ -38,7 +38,7 @@ main{
     align-items: center;
 }
 
-#card{
+.card{
     height: 96%;
     min-height: 545px;
     max-height: 600px;
@@ -55,19 +55,24 @@ main{
     transition: 2s;
 }
 
-#image{
+.image{
     height: 42%;
     width: 100%;
 
     background-color: beige;
-    background-image: url(../images/image-product-mobile.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 
     transition: 2s;
 }
 
-#content{
+.image img{
+    width: auto;
+    height: 100%;
+}
+
+.content{
+    height: 58%;
+    width: 100%;
+
     padding: 20px;
 
     background-color: var(--cor5);
@@ -75,7 +80,7 @@ main{
     transition: 2s;
 }
 
-#content > span:nth-of-type(1){
+.content > span:nth-of-type(1){
     font-family: var(--font2);
     text-transform: uppercase;
     font-size: 0.67rem;
@@ -87,7 +92,7 @@ main{
     display: inline-block;
 }
 
-#content h1{
+.content h1{
     font-size: 1.6rem;
     font-family: var(--font1);
     font-weight: 500;
@@ -97,7 +102,7 @@ main{
     margin-bottom: 14px;
 }
 
-#content p:nth-of-type(1){
+.content p:nth-of-type(1){
     color: var(--cor4);
     font-size: 0.73rem;
     font-family: var(--font2);
@@ -106,7 +111,7 @@ main{
     margin-bottom: 5%;
 }
 
-#content p:nth-of-type(2){
+.content p:nth-of-type(2){
     margin-bottom: 10%;
 
     display: flex;
@@ -116,20 +121,19 @@ main{
     gap: 15px;
 }
 
-#content p:nth-of-type(2) span:nth-of-type(1){
+.content p:nth-of-type(2) span:nth-of-type(1){
     color: var(--cor1);
     font-family: var(--font1);
     font-size: 1.6rem;
 }
 
-#content p:nth-of-type(2) span:nth-of-type(2){
+.content p:nth-of-type(2) span:nth-of-type(2){
     color: var(--cor4);
     font-size: 0.8rem;
-    text-decoration: line-through;
     font-family: var(--font2);
 }
 
-#content button{
+.content button{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -151,20 +155,20 @@ main{
     width: 100%;
 }
 
-#content button:hover{
+.content button:hover{
     background-color: rgba(60, 128, 103, 0.864);
 }
 
-#content button:active{
+.content button:active{
     background-color: rgb(31, 60, 49);    
 }
 
-#content button span{
+.content button span{
     font-size: 1rem;
 }
 /*----------------------Media queries--------------------*/
 @media screen and (min-width:768px){
-    #card{
+    .card{
         /*
         height: 96%;
         min-height: 545px;
@@ -187,25 +191,29 @@ main{
         flex-direction: row;
     }
     
-    #image{
+    .image{
         /*
         height: 42%;
         width: 100%;
     
         background-color: beige;
-        background-image: url(../images/image-product-mobile.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
 
         transition: 2s;
         */
         height: 100%;
         width: 50%;
+    }
 
-        background-image: url(../images/image-product-desktop.jpg);
+    .image img{
+        /*
+        width: auto;
+        height: 100%;
+        */
+        width: 100%;
+        height: auto;
     }
     
-    #content{
+    .content{
         /*
         padding: 20px;
     
@@ -218,7 +226,7 @@ main{
         width: 50%;
     }
 
-    #content > span:nth-of-type(1){
+    .content > span:nth-of-type(1){
         /*
         font-family: var(--font2);
         text-transform: uppercase;
@@ -232,7 +240,7 @@ main{
         margin-bottom: 20px;
     }
     
-    #content h1{
+    .content h1{
         /*
         font-size: 1.6rem;
         font-family: var(--font1);
@@ -246,7 +254,7 @@ main{
         margin-bottom: 20px;
     }
     
-    #content p:nth-of-type(2){
+    .content p:nth-of-type(2){
         /*
         margin-bottom: 10%;
     
